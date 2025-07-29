@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="styles.css" rel='stylesheet'/>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div id="score-container">
+        <div>
+            <span id="player-name-1">Player1</span>
+            <hr>
+            <span class="score" id="player1">0</span>
+        </div>
+        <div>
+            <span id="player-name-2">Player2</span>
+            <hr>
+            <span class="score" id="player2">0</span>
+        </div>
+    </div>
+    <dialog id="status">
+    </dialog>
+    <dialog id="player-name">
+        <label for="first-player">X:</label>
+        <input type="text" id="first-player" placeholder="Player 1" name="firstPlayer" maxlength="10">
+        <hr>
+        <label for="second-player">O:</label>
+        <input type="text" id="second-player" placeholder="Player 2" name="secondPlayer" maxlength="10">
+        <button type="submit" id="player-submit">Play!</button>
+    </dialog>
+    <div id="main-container">
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+        <div class="cell" data-index="9"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
